@@ -76,7 +76,7 @@ public class UserController {
     //测试
     @RequestMapping("/test")
     public ModelAndView test() {
-        return new ModelAndView("test/downloadTest");
+        return new ModelAndView("test/uploadTest");
     }
 
 
