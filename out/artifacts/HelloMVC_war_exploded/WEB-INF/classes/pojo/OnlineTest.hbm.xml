@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="pojo.OnlineTest" table="online_test" schema="se_web">
+        <id name="olHwId">
+            <column name="ol_hw_id" sql-type="int(10)"/>
+        </id>
+        <property name="knoType">
+            <column name="kno_type" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="question">
+            <column name="question" sql-type="varchar(255)"/>
+        </property>
+        <property name="choiceA">
+            <column name="choiceA" sql-type="varchar(255)"/>
+        </property>
+        <property name="choiceB">
+            <column name="choiceB" sql-type="varchar(255)"/>
+        </property>
+        <property name="choiceC">
+            <column name="choiceC" sql-type="varchar(255)"/>
+        </property>
+        <property name="choiceD">
+            <column name="choiceD" sql-type="varchar(255)"/>
+        </property>
+        <property name="answer">
+            <column name="answer" sql-type="varchar(255)"/>
+        </property>
+        <property name="trueFreq">
+            <column name="true_freq" sql-type="int(10)"/>
+        </property>
+        <property name="ansFreq">
+            <column name="ans_freq" sql-type="int(10)"/>
+        </property>
+    </class>
+</hibernate-mapping>

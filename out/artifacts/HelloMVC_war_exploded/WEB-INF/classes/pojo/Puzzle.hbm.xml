@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="pojo.Puzzle" table="puzzle" schema="se_web">
+        <id name="puzzleId">
+            <column name="puzzle_id" sql-type="int(10) unsigned"/>
+        </id>
+        <property name="description">
+            <column name="description" sql-type="varchar(255)"/>
+        </property>
+        <property name="puzzlerId">
+            <column name="puzzler_id" sql-type="int(10)"/>
+        </property>
+        <property name="time">
+            <column name="time" sql-type="datetime"/>
+        </property>
+    </class>
+</hibernate-mapping>

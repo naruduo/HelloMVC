@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="pojo.HwAnswer" table="hw_answer" schema="se_web">
+        <id name="hwAnsId">
+            <column name="hw_ans_id" sql-type="int(10)"/>
+        </id>
+        <property name="stuId">
+            <column name="stu_id" sql-type="int(10)"/>
+        </property>
+        <property name="stuName">
+            <column name="stu_name" sql-type="varchar(10)" length="10"/>
+        </property>
+        <property name="subTime">
+            <column name="sub_time" sql-type="datetime"/>
+        </property>
+        <property name="address">
+            <column name="address" sql-type="varchar(255)"/>
+        </property>
+        <property name="score">
+            <column name="score" sql-type="int(10)"/>
+        </property>
+    </class>
+</hibernate-mapping>

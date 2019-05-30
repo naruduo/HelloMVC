@@ -1,0 +1,104 @@
+<!--<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/se_web?serverTimezone=Asia/Shanghai</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <mapping resource="pojo/CourseChapters.hbm.xml"/>
+        <mapping class="pojo.CourseChapters"/>
+        <mapping resource="pojo/Exp.hbm.xml"/>
+        <mapping class="pojo.Exp"/>
+        <mapping class="pojo.ExpDoc"/>
+        <mapping resource="pojo/ExpDoc.hbm.xml"/>
+        <mapping class="pojo.HibernateSequence"/>
+        <mapping resource="pojo/HibernateSequence.hbm.xml"/>
+        <mapping resource="pojo/Homework.hbm.xml"/>
+        <mapping class="pojo.Homework"/>
+        <mapping resource="pojo/HwAnswer.hbm.xml"/>
+        <mapping class="pojo.HwAnswer"/>
+        <mapping resource="pojo/Notice.hbm.xml"/>
+        <mapping class="pojo.Notice"/>
+        <mapping class="pojo.NotificationView"/>
+        <mapping resource="pojo/NotificationView.hbm.xml"/>
+        <mapping resource="pojo/OnlineTest.hbm.xml"/>
+        <mapping class="pojo.OnlineTest"/>
+        <mapping resource="pojo/OpDetail.hbm.xml"/>
+        <mapping class="pojo.OpDetail"/>
+        <mapping class="pojo.Puzzle"/>
+        <mapping resource="pojo/Puzzle.hbm.xml"/>
+        <mapping class="pojo.Solution"/>
+        <mapping resource="pojo/Solution.hbm.xml"/>
+        <mapping class="pojo.Student"/>
+        <mapping resource="pojo/Student.hbm.xml"/>
+        <mapping resource="pojo/Teacher.hbm.xml"/>
+        <mapping class="pojo.Teacher"/>
+        <mapping resource="pojo/TeacherClass.hbm.xml"/>
+        <mapping class="pojo.TeacherClass"/>
+        <mapping resource="pojo/TeacherStu.hbm.xml"/>
+        <mapping class="pojo.TeacherStu"/>
+        <mapping class="pojo.TeachingProgram"/>
+        <mapping resource="pojo/TeachingProgram.hbm.xml"/>
+        <mapping resource="pojo/TestScore.hbm.xml"/>
+        <mapping class="pojo.TestScore"/>-->
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+    <!--</session-factory>
+</hibernate-configuration>-->
+
+        <!DOCTYPE hibernate-configuration PUBLIC
+                "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- 指定连接数据库所用的驱动 -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!-- 指定连接数据库的url，其中hibernate是本应用连接的数据库名 -->
+        <property name="connection.url">jdbc:mysql://localhost:3306/se_web?useUnicode=true&amp;characterEncoding=utf8</property>
+        <!-- 指定连接数据库的用户名 -->
+        <property name="connection.username">root</property>
+        <!-- 指定连接数据库的密码 -->
+        <property name="connection.password">wei727</property>
+        <!-- 指定连接池里最大连接数 -->
+        <property name="hibernate.c3p0.max_size">20</property>
+        <!-- 指定连接池里最小连接数 -->
+        <property name="hibernate.c3p0.min_size">5</property>
+        <!-- 指定连接池里连接的超时时长 -->
+        <property name="hibernate.c3p0.timeout">120</property>
+        <!-- 指定连接池里最大缓存多少个Statement对象 -->
+        <property name="hibernate.c3p0.max_statements">100</property>
+        <property name="hibernate.c3p0.idle_test_period">120</property>
+        <property name="hibernate.c3p0.acquire_increment">2</property>
+        <property name="hibernate.c3p0.validate">true</property>
+        <!-- 指定数据库方言 -->
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <!-- 外连接抓取的深度 -->
+        <property name="max_fetch_depth">1</property><!--① -->
+        <!-- 根据需要自动创建数据表 -->
+        <property name="hbm2ddl.auto">update</property><!--① -->
+        <!-- 显示Hibernate持久化操作所生成的SQL -->
+        <property name="show_sql">true</property>
+        <!-- 将SQL脚本进行格式化后再输出 -->
+        <property name="hibernate.format_sql">true</property>
+        <!-- 开启本地事务 -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- 二级缓存相关属性,设置缓存区的实现类
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+        <property name="hibernate.cache.region.factory_class">
+            org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+         -->
+        <!-- 扫描pojo包里的持久化类 -->
+        <property name="packagesToScan">pojo</property>
+
+        <!-- 罗列所有持久化类的类名-->
+        <mapping class="pojo.Student" />
+        <mapping class="pojo.Teacher" />
+
+    </session-factory>
+</hibernate-configuration>

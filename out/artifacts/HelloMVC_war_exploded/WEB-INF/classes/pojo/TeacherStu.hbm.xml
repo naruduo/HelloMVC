@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="pojo.TeacherStu" table="teacher_stu" schema="se_web">
+        <composite-id mapped="true" class="pojo.TeacherStuPK">
+            <key-property name="stuId">
+                <column name="stu_id" sql-type="int(10)"/>
+            </key-property>
+            <key-property name="teacherId">
+                <column name="teacher_id" sql-type="int(10)"/>
+            </key-property>
+        </composite-id>
+        <property name="data">
+            <column name="data" sql-type="varchar(255)" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

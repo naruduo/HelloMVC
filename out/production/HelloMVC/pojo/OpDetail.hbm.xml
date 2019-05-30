@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="pojo.OpDetail" table="op_detail" schema="se_web">
+        <id name="logId">
+            <column name="log_id" sql-type="int(10)"/>
+        </id>
+        <property name="stuId">
+            <column name="stu_id" sql-type="int(10)"/>
+        </property>
+        <property name="stuName">
+            <column name="stu_name" sql-type="varchar(10)" length="10"/>
+        </property>
+        <property name="opDetail">
+            <column name="op_detail" sql-type="varchar(255)"/>
+        </property>
+    </class>
+</hibernate-mapping>
