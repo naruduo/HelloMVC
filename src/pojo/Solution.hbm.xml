@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="pojo.Solution" table="solution" schema="se_web">
+        <id name="solutionId">
+            <column name="solution_id" sql-type="int(10) unsigned"/>
+        </id>
+        <property name="puzzleId">
+            <column name="puzzle_id" sql-type="int(10) unsigned"/>
+        </property>
+        <property name="content">
+            <column name="content" sql-type="varchar(255)"/>
+        </property>
+        <property name="soluerId">
+            <column name="soluer_id" sql-type="int(10) unsigned"/>
+        </property>
+        <property name="time">
+            <column name="time" sql-type="datetime"/>
+        </property>
+        <property name="likeFreq">
+            <column name="like_freq" sql-type="int(10) unsigned"/>
+        </property>
+    </class>
+</hibernate-mapping>

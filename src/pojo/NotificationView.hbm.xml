@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="pojo.NotificationView" table="notification_view" schema="se_web">
+        <composite-id mapped="true" class="pojo.NotificationViewPK">
+            <key-property name="notificationId">
+                <column name="notification_id" sql-type="int(10)"/>
+            </key-property>
+            <key-property name="stuId">
+                <column name="stu_id" sql-type="int(10)"/>
+            </key-property>
+        </composite-id>
+        <property name="status">
+            <column name="status" sql-type="bit(1)"/>
+        </property>
+    </class>
+</hibernate-mapping>
