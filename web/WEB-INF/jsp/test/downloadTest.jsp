@@ -16,6 +16,6 @@
     <title>下载测试</title>
 </head>
 <body>
-    <a href="/HelloMVC/user/download" >下载</a>
+    <a href="/HelloMVC/user/download?fileName=3. 软件学院在校内完成专业实习的管理规定.doc">3. 软件学院在校内完成专业实习的管理规定.doc</a>
 </body>
 </html>

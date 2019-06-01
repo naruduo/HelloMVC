@@ -49,6 +49,8 @@
           <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.16/lib/commons-fileupload-1.4.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.16/lib/commons-fileupload-1.4-javadoc.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.16/lib/commons-fileupload-1.4-sources.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/aspectjweaver-1.9.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/aspectj-1.9.3.jar" />
         </element>
       </element>
     </root>

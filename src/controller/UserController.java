@@ -13,6 +13,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.FileCopyUtils;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -25,6 +26,7 @@ import service.BaseService;
 
 import javax.servlet.http.HttpSession;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.net.URLEncoder;
 
 @Controller
@@ -39,10 +41,9 @@ public class UserController {
     @Autowired
     BaseService bs;
 
-
     //登录
     @RequestMapping("/login")
-    public ModelAndView login(@RequestParam("id") Integer id,
+    public ModelAndView login (@RequestParam("id") Integer id,
                               @RequestParam("password") String pwd,
                               @RequestParam("role") String role) throws Exception{
         //创建视图对象
@@ -62,40 +63,45 @@ public class UserController {
         return mav;
     }
 
-
     //登出
     @RequestMapping("/logout")
-    public ModelAndView logout(SessionStatus status) {
+    public ModelAndView logout (SessionStatus status) {
         //删除session中的所有用户信息
         status.setComplete();
         //返回登录页面
         return new ModelAndView("logins");
     }
 
-
     //测试
     @RequestMapping("/test")
-    public ModelAndView test() {
+    public ModelAndView test () {
         return new ModelAndView("test/uploadTest");
     }
 
-
     /*
-     * 上传
+     * 上传：根据用户id来存储到对应的文件夹
      * 参数：上传的文件
+     *       Session方便获得用户id
      * 返回值：Json格式返回字符串 表示上传是否成功
      */
     @RequestMapping("/upload")
-    public @ResponseBody String upload(MultipartFile uploadFile,
-                  HttpSession httpSession) throws Exception {
+    public @ResponseBody String upload (@RequestParam MultipartFile uploadFile,
+                                       HttpSession session) throws Exception {
         //是否选择了文件
         if(uploadFile.getSize() > 0) {
             //获取文件名
             String fileName = uploadFile.getOriginalFilename();
             //获取根目录
-            String rootPath = httpSession.getServletContext().getRealPath("/");
+            String rootPath = session.getServletContext().getRealPath("/");
+            //获取User的id作为子目录
+            String dirName = ((User)session.getAttribute("user")).getId().toString();
+            //该目录是否存在
+            File dir = new File(rootPath + dirName);
+            //不存在 则创建
+            if(!dir.exists())
+                dir.mkdir();
             //新建文件
-            File file = new File(rootPath, fileName);
+            File file = new File(dir, fileName);
             //存储文件
             uploadFile.transferTo(file);
             return "上传成功！";
@@ -104,25 +110,32 @@ public class UserController {
         return "上传出现了一些问题哦！";
     }
 
-
     /*
      *下载
      * 参数：下载的文件名
      * 返回值：对应的文件
      */
     @RequestMapping("/download")
-    public ResponseEntity<byte[]> download(String fileName) throws Exception {
+    public ResponseEntity<byte[]> download (@RequestParam String fileName,
+                                            @RequestParam Integer id,
+                                            HttpSession session) throws Exception {
         //获得文件路径+名称
-        String rootPath = "";
-        //File file = new File(rootPath, fileName);
-        fileName = "百度网盘共享.txt";
-        File file = new File("E:\\大三下\\JavaEE\\百度网盘共享.txt");
+        String rootPath = session.getServletContext().getRealPath("/");
+        String dirName = id.toString();
+        File dir = new File(rootPath + dirName);
+        //文件夹不存在 返回异常
+        if(!dir.exists())
+            throw new FileNotFoundException();
+        //根据目录及文件名创建文件
+        File file = new File(dir, fileName);
         //创建响应报头
         HttpHeaders headers = new HttpHeaders();
         //设置文件类型为 二进制流 可以传输任何文件
         headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
         //设置响应方式
-        headers.setContentDispositionFormData("attachment", URLEncoder.encode(fileName,"utf-8"));
+        //防止文件名乱码 或者转码后 变'+'号
+        fileName = new String(file.getName().getBytes("utf-8"), "iso-8859-1");
+        headers.setContentDispositionFormData("attachment", fileName);
         //返回字节流的响应报文
         return new ResponseEntity<byte[]> (FileCopyUtils.copyToByteArray(file),
                 headers, HttpStatus.CREATED);

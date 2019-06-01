@@ -38,10 +38,10 @@
         <div class="row">
           <div class="col col-4">
                   <label class="radio">
-                 <input type="radio" name="role"  value="Student"/>
+                 <input type="radio" name="role"  value="Student" checked/>
                  <i></i>学生</label>
                  <label class="radio">
-                     <input type="radio" name="role"  value="Teacher"/>
+                     <input type="radio" name="role"  value="Teacher" />
                   <i></i>教师</label>
            </div>
       </div>
