@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<base href="localhost:8080/HelloMVC/" />
+	<!--<base href="localhost:8080/HelloMVC/" />-->
 <meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <meta name="description">
 <title>软件工程精品课网站</title>
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-	<form name="form1" action="user/login.action" method="post" >
+	<form name="form1" action="<%=request.getContextPath()%>/user/login.action" method="post" >
     <div class="login_logo"  align="center">  <img src="http://cmcs.fzu.edu.cn/website/static/fzsjgw/image/shuji.png"  alt="福州大学数计学院" /> </div><br/><br/>
      <div class="login_logo_1"  align="center">  <img src="<%=request.getContextPath()%>/picture/login_logo_1.PNG"  alt="软件工程" /> </div><br/><br/>
     <div class="wall-warp">
@@ -29,10 +29,10 @@
 			  <div class="switch-wrap switch-wrap-signin active">
 				<ul class="wall-form-ipt-list">
 					<li>
-						<input type="text" placeholder="请输入账号" value=""  name="id" onfocus="hideErrorInfo(&#39;form-ipt-error-l-username&#39;);"id="lUsername" /><span>${iderror}</span>				
+						<input type="text" placeholder="请输入账号" value=""  name="id" onfocus="hideErrorInfo(&#39;form-ipt-error-l-username&#39;);"id="lUsername" /><span>${loginError}</span>
 					</li>
 					<li>
-						<input type="password" placeholder="密码" value="" name="password" onfocus="hideErrorInfo(&#39;form-ipt-error-l-password&#39;);" id="lPassword" />	<span>${passworderror}</span>			
+						<input type="password" placeholder="密码" value="" name="password" onfocus="hideErrorInfo(&#39;form-ipt-error-l-password&#39;);" id="lPassword" />
 					</li>
 				</ul>								
 			
