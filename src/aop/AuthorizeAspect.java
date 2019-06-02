@@ -10,9 +10,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
-import javax.servlet.http.HttpServletRequest;
+import util.HttpSessionUtils;
 
 
 @Aspect
@@ -25,10 +23,7 @@ public class AuthorizeAspect {
 
     @Before("verify()")
     public void doVerify() {
-        ServletRequestAttributes attr =
-                (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-        HttpServletRequest req = attr.getRequest();
-        if(req.getSession().getAttribute("user") == null)
+        if(HttpSessionUtils.getUser() == null)
             throw new AuthorizeException();
     }
 

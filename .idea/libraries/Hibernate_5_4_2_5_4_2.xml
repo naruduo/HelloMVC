@@ -20,6 +20,9 @@
       <root url="jar://$PROJECT_DIR$/lib/stax-ex-1.8.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/jaxb-runtime-2.3.1.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/hibernate-core-5.4.2.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/c3p0-0.9.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hibernate-c3p0-5.4.2.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mchange-commons-java-0.2.15.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

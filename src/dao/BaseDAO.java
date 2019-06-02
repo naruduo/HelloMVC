@@ -9,4 +9,6 @@ public interface BaseDAO<T> {
 
     public List<T> list(Class<T> entityClazz);
 
+    public Serializable save(T entity);
+
 }

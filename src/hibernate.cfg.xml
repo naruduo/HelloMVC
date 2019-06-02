@@ -64,6 +64,7 @@
         <property name="connection.username">root</property>
         <!-- 指定连接数据库的密码 -->
         <property name="connection.password">wei727</property>
+        <property name="hibernate.connection.provider_class">org.hibernate.c3p0.internal.C3P0ConnectionProvider</property>
         <!-- 指定连接池里最大连接数 -->
         <property name="hibernate.c3p0.max_size">20</property>
         <!-- 指定连接池里最小连接数 -->
@@ -86,7 +87,7 @@
         <!-- 将SQL脚本进行格式化后再输出 -->
         <property name="hibernate.format_sql">true</property>
         <!-- 开启本地事务 -->
-        <property name="current_session_context_class">thread</property>
+        <property name="hibernate.current_session_context_class">org.springframework.orm.hibernate5.SpringSessionContext</property>
 
         <!-- 二级缓存相关属性,设置缓存区的实现类
         <property name="hibernate.cache.use_second_level_cache">true</property>
@@ -99,6 +100,7 @@
         <!-- 罗列所有持久化类的类名-->
         <mapping class="pojo.Student" />
         <mapping class="pojo.Teacher" />
+        <mapping class="pojo.OpDetail" />
 
     </session-factory>
 </hibernate-configuration>

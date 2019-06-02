@@ -13,7 +13,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.FileCopyUtils;
-import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -22,12 +21,11 @@ import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import pojo.User;
-import service.BaseService;
+import service.UserService;
 
 import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.net.URLEncoder;
 
 @Controller
 @Scope("prototype")
@@ -36,10 +34,8 @@ import java.net.URLEncoder;
 @SessionAttributes(types = {User.class}, value = {"user"})
 public class UserController {
 
-
-    //
     @Autowired
-    BaseService bs;
+    UserService userService;
 
     //登录
     @RequestMapping("/login")
@@ -49,7 +45,7 @@ public class UserController {
         //创建视图对象
         ModelAndView mav = new ModelAndView();
         //登录操作
-        User user = (User)bs.login(id, pwd, Class.forName("pojo." + role));
+        User user = (User)userService.login(id, pwd, Class.forName("pojo." + role));
         if(user != null) {
             //登录成功 返回对应用户主界面
             mav.setViewName(role + "Index");
@@ -89,21 +85,7 @@ public class UserController {
                                        HttpSession session) throws Exception {
         //是否选择了文件
         if(uploadFile.getSize() > 0) {
-            //获取文件名
-            String fileName = uploadFile.getOriginalFilename();
-            //获取根目录
-            String rootPath = session.getServletContext().getRealPath("/");
-            //获取User的id作为子目录
-            String dirName = ((User)session.getAttribute("user")).getId().toString();
-            //该目录是否存在
-            File dir = new File(rootPath + dirName);
-            //不存在 则创建
-            if(!dir.exists())
-                dir.mkdir();
-            //新建文件
-            File file = new File(dir, fileName);
-            //存储文件
-            uploadFile.transferTo(file);
+            userService.saveFile(uploadFile);
             return "上传成功！";
         }
         //返回错误提示

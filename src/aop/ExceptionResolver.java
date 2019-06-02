@@ -14,14 +14,23 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 @Component
 public class ExceptionResolver implements HandlerExceptionResolver {
 
-    @ExceptionHandler(value = AuthorizeException.class)
-    public ModelAndView resolveException(HttpServletRequest arg0, HttpServletResponse arg1, Object arg2,
-                                         Exception arg3) {
-        return new ModelAndView("logins");
+    @ExceptionHandler
+    public ModelAndView resolveException(HttpServletRequest httpServletRequest,
+                                         HttpServletResponse httpServletResponse,
+                                         Object obj, Exception ex) {
+        ModelAndView view = new ModelAndView();
+        if(ex instanceof AuthorizeException)
+            view.setViewName("logins");
+        else if(ex instanceof IOException)
+            view.setViewName("/test/errors");
+        ex.printStackTrace();
+        view.addObject("errMsg", ex.getMessage());
+        return view;
     }
 
 }

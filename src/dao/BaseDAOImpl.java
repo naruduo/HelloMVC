@@ -21,4 +21,10 @@ public class BaseDAOImpl<T> implements BaseDAO<T> {
         Query query = HibernateUtil.getSession().createQuery(hql);
         return (List<T>)query.list();
     }
+
+    @Override
+    public Serializable save(T entity) {
+        return HibernateUtil.getSession().save(entity);
+    }
+
 }
