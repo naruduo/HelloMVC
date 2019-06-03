@@ -47,6 +47,7 @@ public class UserController {
         //登录操作
         User user = (User)userService.login(id, pwd, Class.forName("pojo." + role));
         if(user != null) {
+            user.setRole(role);
             //登录成功 返回对应用户主界面
             mav.setViewName(role + "Index");
             mav.addObject("user", user);
@@ -68,10 +69,17 @@ public class UserController {
         return new ModelAndView("logins");
     }
 
+    //修改密码
+    @RequestMapping("/chpwd")
+    public @ResponseBody String changePwd(@RequestParam String newPwd) {
+        userService.changePwd(newPwd);
+        return "修改成功！";
+    }
+
     //测试
     @RequestMapping("/test")
     public ModelAndView test () {
-        return new ModelAndView("test/uploadTest");
+        return new ModelAndView("test/changPassword");
     }
 
     /*

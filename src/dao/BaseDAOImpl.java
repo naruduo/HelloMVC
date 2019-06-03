@@ -27,4 +27,9 @@ public class BaseDAOImpl<T> implements BaseDAO<T> {
         return HibernateUtil.getSession().save(entity);
     }
 
+    @Override
+    public void update(T entity) {
+        HibernateUtil.getSession().saveOrUpdate(entity);
+    }
+
 }

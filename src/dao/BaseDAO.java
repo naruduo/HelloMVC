@@ -11,4 +11,6 @@ public interface BaseDAO<T> {
 
     public Serializable save(T entity);
 
+    public void update(T entity);
+
 }

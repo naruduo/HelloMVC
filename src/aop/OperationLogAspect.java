@@ -29,8 +29,9 @@ public class OperationLogAspect {
     public void oplog() {}
 
     @AfterReturning("oplog()")
-    @Transactional(propagation= Propagation.REQUIRED)
+    @Transactional
     public void writeOpLog() {
+        System.out.println(1);
         User user = HttpSessionUtils.getUser();
         OpDetail od = new OpDetail();
         od.setStuId(user.getId());

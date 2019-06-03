@@ -7,35 +7,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11884096-4f4d-44d1-9b2e-b9946f6dc9b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/c3p0-0.9.5.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hibernate-c3p0-5.4.2.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mchange-commons-java-0.2.15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aop/OperationLogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/OpDetailDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/OpDetailDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/HttpSessionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/test/errors.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_2_5_4_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_2_5_4_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloMVC" beforeDir="false" afterPath="$PROJECT_DIR$/HelloMVC" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/test/changPassword.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloMVC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HelloMVC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/HelloMVC_war_exploded/WEB-INF/classes/aop/OperationLogAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HelloMVC_war_exploded/WEB-INF/classes/aop/OperationLogAspect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/HelloMVC_war_exploded/WEB-INF/classes/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HelloMVC_war_exploded/WEB-INF/classes/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HelloMVC_war_exploded/WEB-INF/classes/dao/BaseDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HelloMVC_war_exploded/WEB-INF/classes/dao/BaseDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HelloMVC_war_exploded/WEB-INF/classes/dao/BaseDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HelloMVC_war_exploded/WEB-INF/classes/dao/BaseDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/HelloMVC_war_exploded/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HelloMVC_war_exploded/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/HelloMVC_war_exploded/WEB-INF/classes/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HelloMVC_war_exploded/WEB-INF/classes/pojo/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/HelloMVC_war_exploded/WEB-INF/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HelloMVC_war_exploded/WEB-INF/classes/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/HelloMVC_war_exploded/WEB-INF/classes/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HelloMVC_war_exploded/WEB-INF/classes/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloMVC/aop/OperationLogAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloMVC/aop/OperationLogAspect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HelloMVC/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloMVC/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloMVC/dao/BaseDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloMVC/dao/BaseDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloMVC/dao/BaseDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloMVC/dao/BaseDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HelloMVC/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloMVC/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aop/AuthorizeAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aop/AuthorizeAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aop/ExceptionResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aop/ExceptionResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloMVC/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloMVC/pojo/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloMVC/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloMVC/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloMVC/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloMVC/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aop/OperationLogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aop/OperationLogAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/BaseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/BaseDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/BaseDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/BaseDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exception/AuthorizeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/AuthorizeException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,32 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-792">
-              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/aop/AuthorizeAspect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/service/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+            <state relative-caret-position="220">
+              <caret line="75" column="23" lean-forward="true" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,10 +80,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/service/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="37" column="34" lean-forward="true" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/aop/OperationLogAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+            <state relative-caret-position="110">
+              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="33" column="93" selection-start-line="33" selection-start-column="93" selection-end-line="33" selection-end-column="93" />
+            <state relative-caret-position="66">
+              <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -133,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="89" column="120" selection-start-line="89" selection-start-column="120" selection-end-line="89" selection-end-column="120" />
+            <state relative-caret-position="1716">
+              <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -173,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/dao/StudentDAOa.java" />
         <option value="$PROJECT_DIR$/src/util/HibernateUtil.java" />
         <option value="$PROJECT_DIR$/src/controller/HelloController.java" />
         <option value="$PROJECT_DIR$/src/controller/SController.java" />
@@ -187,7 +168,6 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/utilPage/paramSetting.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/hello.jsp" />
         <option value="$PROJECT_DIR$/src/util/FileUtils.java" />
-        <option value="$PROJECT_DIR$/src/pojo/User.java" />
         <option value="$PROJECT_DIR$/src/service/StudentService.java" />
         <option value="$PROJECT_DIR$/src/service/TeacherService.java" />
         <option value="$PROJECT_DIR$/src/service/TeacherServiceImpl.java" />
@@ -212,18 +192,20 @@
         <option value="$PROJECT_DIR$/src/util/SessionUtils.java" />
         <option value="$PROJECT_DIR$/src/util/HttpSessionUtils.java" />
         <option value="$PROJECT_DIR$/src/dao/OpDetailDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/dao/BaseDAO.java" />
-        <option value="$PROJECT_DIR$/src/service/UserService.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/test/errors.jsp" />
         <option value="$PROJECT_DIR$/src/exception/AuthorizeException.java" />
         <option value="$PROJECT_DIR$/src/aop/AuthorizeAspect.java" />
-        <option value="$PROJECT_DIR$/src/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/aop/ExceptionResolver.java" />
-        <option value="$PROJECT_DIR$/src/service/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/dao/BaseDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/aop/OperationLogAspect.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/pojo/User.java" />
+        <option value="$PROJECT_DIR$/src/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/test/changPassword.jsp" />
+        <option value="$PROJECT_DIR$/src/aop/OperationLogAspect.java" />
+        <option value="$PROJECT_DIR$/src/dao/BaseDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/dao/BaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/service/UserServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -261,13 +243,24 @@
             <path>
               <item name="HelloMVC" type="b2602c69:ProjectViewProjectNode" />
               <item name="HelloMVC" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HelloMVC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HelloMVC" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HelloMVC" type="b2602c69:ProjectViewProjectNode" />
               <item name="HelloMVC" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HelloMVC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HelloMVC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HelloMVC" type="b2602c69:ProjectViewProjectNode" />
@@ -292,6 +285,21 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HelloMVC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HelloMVC" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HelloMVC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HelloMVC" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -308,7 +316,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -503,6 +511,9 @@
       <workItem from="1559185277021" duration="25740000" />
       <workItem from="1559384961368" duration="11764000" />
       <workItem from="1559431793745" duration="14069000" />
+      <workItem from="1559487871348" duration="4252000" />
+      <workItem from="1559542480653" duration="1392000" />
+      <workItem from="1559545498321" duration="1296000" />
     </task>
     <task id="LOCAL-00001" summary="idea test">
       <created>1559202817822</created>
@@ -536,7 +547,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108958000" />
+    <option name="totallyTimeSpent" value="115898000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -550,7 +561,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.30495977" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.31702414" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" sideWeight="0.5021097" side_tool="true" weight="0.25938338" />
@@ -670,13 +681,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="idea test" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/dao/TeacherDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -753,23 +757,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/StudentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -921,50 +908,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/BaseDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/BaseServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-303">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/service/BaseService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/HttpSessionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1002,29 +949,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/BaseDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/aop/ExceptionResolver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="260">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#0#17#1" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/UserController.java">
+    <entry file="jar://$PROJECT_DIR$/../../apache-tomcat-9.0.16/lib/catalina.jar!/org/apache/catalina/startup/Bootstrap.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-1120" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/aop/AuthorizeAspect.java">
@@ -1037,49 +974,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/util/HttpSessionUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+        <state relative-caret-position="24">
+          <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/aop/ExceptionResolver.java">
+    <entry file="file://$PROJECT_DIR$/src/service/BaseServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        <state relative-caret-position="-44">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="89" column="120" selection-start-line="89" selection-start-column="120" selection-end-line="89" selection-end-column="120" />
+        <state relative-caret-position="1716">
+          <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="33" column="93" selection-start-line="33" selection-start-column="93" selection-end-line="33" selection-end-column="93" />
+        <state relative-caret-position="66">
+          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../apache-tomcat-9.0.16/lib/catalina.jar!/org/apache/catalina/startup/Bootstrap.class">
+    <entry file="file://$PROJECT_DIR$/src/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1120" />
+        <state relative-caret-position="110">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/test/changPassword.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/BaseDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/BaseDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#0#17#1" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#747#748#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/StudentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/aop/OperationLogAspect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        <state relative-caret-position="110">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="75" column="23" lean-forward="true" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="37" column="34" lean-forward="true" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1151,7 +1164,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>HelloMVC</last-edited>
+          <last-edited>Spring|HelloMVC</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

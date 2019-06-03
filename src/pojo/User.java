@@ -10,6 +10,7 @@ public class User {
     private Integer id;
     private String name;
     private Integer classId;
+    private String role;
 
     public User(Integer id, String name, Integer classId) {
         this.id = id;
@@ -40,4 +41,8 @@ public class User {
     public void setClassId(Integer classId) {
         this.classId = classId;
     }
+
+    public String getRole() { return role; }
+
+    public void setRole(String role) { this.role = role; }
 }

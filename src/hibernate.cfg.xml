@@ -87,7 +87,7 @@
         <!-- 将SQL脚本进行格式化后再输出 -->
         <property name="hibernate.format_sql">true</property>
         <!-- 开启本地事务 -->
-        <property name="hibernate.current_session_context_class">org.springframework.orm.hibernate5.SpringSessionContext</property>
+        <property name="hibernate.current_session_context_class">thread</property>
 
         <!-- 二级缓存相关属性,设置缓存区的实现类
         <property name="hibernate.cache.use_second_level_cache">true</property>
