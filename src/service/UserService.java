@@ -12,7 +12,7 @@ import java.io.IOException;
 
 public interface UserService extends BaseService<User> {
 
-    public void changePwd(String newPwd);
+    public boolean changePwd(String newPwd);
 
     public void saveFile(MultipartFile uploadFile) throws IOException;
 

@@ -6,38 +6,46 @@
 package service;
 
 import dao.BaseDAO;
+import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 import pojo.Student;
 import pojo.Teacher;
 import pojo.User;
+import util.HibernateUtil;
 import util.HttpSessionUtils;
 
 import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.IOException;
 
-@Transactional
 @Service("userService")
 public class UserServiceImpl extends BaseServiceImpl<User> implements UserService {
 
     @Autowired
     BaseDAO baseDAO;
 
-    public void changePwd(String newPwd) {
-        User user = HttpSessionUtils.getUser();
-        if("Student".equals(user.getRole())) {
-          Student stu = (Student)baseDAO.get(Student.class, user.getId());
-          stu.setPassword(newPwd);
-          baseDAO.update(stu);
+    public boolean changePwd(String newPwd) {
+        Transaction tx = HibernateUtil.getSession().beginTransaction();
+        try {
+            User user = HttpSessionUtils.getUser();
+            if ("Student".equals(user.getRole())) {
+                Student stu = (Student) baseDAO.get(Student.class, user.getId());
+                stu.setPassword(newPwd);
+                baseDAO.update(stu);
+            } else if ("Teacher".equals(user.getRole())) {
+                Teacher t = (Teacher) baseDAO.get(Teacher.class, user.getId());
+                t.setPassword(newPwd);
+                baseDAO.update(t);
+            }
+            tx.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+            tx.rollback();
+            return false;
         }
-        else if("Teacher".equals(user.getRole())) {
-            Teacher t = (Teacher)baseDAO.get(Teacher.class, user.getId());
-            t.setPassword(newPwd);
-            baseDAO.update(t);
-        }
+        return true;
     }
 
     public void saveFile(MultipartFile uploadFile) throws IOException {

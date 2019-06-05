@@ -13,10 +13,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.FileCopyUtils;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
@@ -70,16 +67,21 @@ public class UserController {
     }
 
     //修改密码
-    @RequestMapping("/chpwd")
-    public @ResponseBody String changePwd(@RequestParam String newPwd) {
-        userService.changePwd(newPwd);
-        return "修改成功！";
+    @ResponseBody
+    @RequestMapping(value = "/chpwd", produces="text/html;charset=utf-8")
+    public String changePwd(@RequestBody String newPwd) {
+        String data;
+        if(userService.changePwd(newPwd))
+            data = "修改成功";
+        else
+            data = "修改失败";
+        return data;
     }
 
     //测试
     @RequestMapping("/test")
     public ModelAndView test () {
-        return new ModelAndView("test/changPassword");
+        return new ModelAndView("test/changePassword");
     }
 
     /*
